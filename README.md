@@ -17,3 +17,13 @@ dependencies {
 	        implementation 'com.github.ashutosh53prajapat:DSImagePickerAndCropper:Tag'
 	}
 ```
+
+> Step 3. Add activity in manifest file
+```manifest
+<application>
+...
+...
+   <activity android:name="com.dts.dsimagepickerlibrary.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+	    </application>
+	    ```
