@@ -33,3 +33,23 @@ dependencies {
 </application>
 	    
 ```
+
+> Setp 4. Add onActivityResult in your activity
+> 
+```Activity class
+
+ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode == RESULT_OK) {
+            if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+                val intentData = CropImage.getActivityResult(data)
+                val selectedImagePath = intentData.uri.path
+ Log.e("FinalImage",selectedImagePath.toString());
+
+
+            }
+        }
+    }
+    
+```    
