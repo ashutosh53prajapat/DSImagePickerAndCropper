@@ -14,7 +14,7 @@ allprojects {
 > Step 2. Add the dependency
 ```gradle
 dependencies {
-	        implementation 'com.github.ashutosh53prajapat:DSImagePickerAndCropper:Tag'
+	        implementation 'com.github.ashutosh53prajapat:DSImagePickerAndCropper:$LATEST_VERSION'
 	}
 ```
 
