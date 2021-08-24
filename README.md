@@ -20,10 +20,7 @@ dependencies {
 
 > Step 3. Add activity in manifest file
 ```manifest
-
-  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    
+  
 <application>
 
 <activity android:name="com.dts.dsimagepickerlibrary.CropImageActivity"
