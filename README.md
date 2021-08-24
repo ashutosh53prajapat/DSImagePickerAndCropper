@@ -35,6 +35,17 @@ dependencies {
 > 
 ```Activity class
 
+private void openImagePicker(){
+ CropImage.activity(null)
+            .setFixAspectRatio(true)
+            .setAspectRatio(1, 1)
+            .setRequestedSize(500, 500)
+            .setAllowRotation(false)
+            .setAllowFlipping(false)
+            .setGuidelines(CropImageView.Guidelines.ON)
+            .start(this)}
+	    
+	    
  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
