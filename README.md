@@ -21,9 +21,11 @@ dependencies {
 > Step 3. Add activity in manifest file
 ```manifest
 <application>
-...
-...
-   <activity android:name="com.dts.dsimagepickerlibrary.CropImageActivity"
+
+<activity android:name="com.dts.dsimagepickerlibrary.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
-	    </application>
-	    ```
+
+
+</application>
+	    
+```
